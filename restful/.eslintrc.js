@@ -16,5 +16,7 @@ module.exports = {
   rules: {
     'no-prototype-builtins': 'off',
     'no-shadow': 'off',
+    'no-underscore-dangle': 'off',
+    'no-use-before-define': 'warn',
   },
 };

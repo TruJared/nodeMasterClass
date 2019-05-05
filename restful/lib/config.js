@@ -6,6 +6,7 @@ class Environments {
       httpPort,
       httpsPort,
       envName,
+      hashingSecret: 'thisIsASecret',
     };
   }
 }

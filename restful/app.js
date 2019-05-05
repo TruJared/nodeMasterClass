@@ -1,11 +1,12 @@
-const config = require('./config');
-const { httpServer, httpsServer } = require('./server');
+const config = require('./lib/config');
+const { httpServer, httpsServer } = require('./lib/server');
 
-//  *  test fake db  *  //
-// #region
+// #region -- test fake db
 // const Crud = require('./lib/crud');
 // // write //
-// let myData = new Crud({ dir: 'test', file: 'newFile', data: { name: 'Jared' } }, err => console.log(`error ${err}`));
+// let myData =
+// new Crud({ dir: 'test', file: 'newFile',
+// data: { name: 'Jared' } }, err => console.log(`error ${err}`));
 // myData.create();
 // // read //
 // myData = new Crud({ dir: 'test', file: 'newFile' }, (err, data) => {
@@ -14,7 +15,9 @@ const { httpServer, httpsServer } = require('./server');
 // });
 // myData.read();
 // // update //
-// myData = new Crud({ dir: 'test', file: 'newFile', data: { isCool: 'False' } }, err => console.log(`error: ${err}`));
+// myData =
+//   new Crud({ dir: 'test', file: 'newFile',
+//   data: { isCool: 'False' } }, err => console.log(`error: ${err}`));
 // myData.update();
 // // delete //
 // myData = new Crud({ dir: 'test', file: 'newFile' }, (err) => {
